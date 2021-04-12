@@ -1,16 +1,16 @@
+import React from 'react'
 import "../assets/css/simplePanels.css"
+import TiraSimple from './TiraSimple';
 
 function Simple() {
     return (
 <div class="categorias">
-
-        <div className = "divSimple"><h2 className = "miniDiv">Total de usuarios</h2></div>
-        <div className = "divSimple"><h2 className = "miniDiv">Total de productos</h2></div>
-        <div className = "divSimple"><h2 className = "miniDiv">Total de categorias</h2></div>
-
+        <TiraSimple titulo="Usuarios"/>
+        <TiraSimple titulo="Usuarios"/>
+        <TiraSimple titulo="Usuarios"/>
 </div>
 
-    )
+    );
 }
 
 
