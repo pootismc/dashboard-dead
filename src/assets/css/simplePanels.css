@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    margin-top: 100px
+}
+
+.divSimple {
+    background-color: lightgray;
+    height: 250px;
+    width: 30%;
+    text-align: center;
+}
+
+.miniDiv{
+    margin-top:10px;
+}

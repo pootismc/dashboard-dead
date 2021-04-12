@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 60px
+}
+
+.logo{
+    padding-top: 20px
+}
+
+.avatar{
+    width: 200px;
+}
+
+.lidash {
+    padding-top: 20px;
+    font-family: Poppins;
+}
+
+
+
