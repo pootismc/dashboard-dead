@@ -7,28 +7,43 @@ class Simple extends Component {
         super(props);   
         this.state = {
             total: 0,
+            productos: 0,
+            colecciones: 0,
         }
     }
     apiCall(url, c) {
-        console.log("1")
         fetch(url)
             .then(response => response.json())
             .then(data => c(data))
             .catch(e => console.log(e))
     }
-
-    totalUsuarios = (data) => {
-        console.log("2", data)
-        this.setState({
-    total: data.meta.total 
-       })
-       console.log()
-   }
-   
+    
     componentDidMount() {
         console.log( "3")
         this.apiCall("https://dead-fellas.herokuapp.com/api/user", this.totalUsuarios);
+        this.apiCall("https://dead-fellas.herokuapp.com/api/product", this.totalProductos);
+       this.apiCall("https://dead-fellas.herokuapp.com/api/collections", this.totalColecciones)
+        }
+    
+        totalUsuarios = (data) => {
+        this.setState({
+            total: data.meta.total,
+        })
+
     }
+
+        totalProductos = (data) => {
+        this.setState({
+            productos: data.meta.total,
+        })
+    }
+    
+        totalColecciones = (data) => {
+        this.setState({
+            colecciones: data.meta.total,
+        })
+    }
+   
 
     render() {
     return (
@@ -38,12 +53,12 @@ class Simple extends Component {
             <span>{this.state.total}</span>
         </div>
         <div className = "divSimple">
-            <h2 className = "miniDiv">Hola</h2>
-            <span></span>
+            <h2 className = "miniDiv">Total de productos</h2>
+            <span>{this.state.productos}</span>
         </div>
         <div className = "divSimple">
-            <h2 className = "miniDiv">Hola</h2>
-            <span></span>
+            <h2 className = "miniDiv">Total de colecciones</h2>
+            <span>{this.state.colecciones}</span>
         </div>
     </div>
 
