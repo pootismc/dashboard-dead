@@ -6,7 +6,7 @@ class Simple extends Component {
     constructor(props) {
         super(props);   
         this.state = {
-            arrayUsuarios: []
+            total: 0,
         }
     }
     apiCall(url, c) {
@@ -20,7 +20,7 @@ class Simple extends Component {
     totalUsuarios = (data) => {
         console.log("2", data)
         this.setState({
-           arrayUsuarios: data.data,  
+    total: data.meta.total 
        })
        console.log()
    }
@@ -35,8 +35,7 @@ class Simple extends Component {
     <div className="categorias">
         <div className = "divSimple">
             <h2 className = "miniDiv">Total de usuarios</h2>
-            {this.state && this.state.arrayUsuarios.map(function(e, i){
-            return <li key={i}>{i}</li>})}
+            <span>{this.state.total}</span>
         </div>
         <div className = "divSimple">
             <h2 className = "miniDiv">Hola</h2>
@@ -52,7 +51,7 @@ class Simple extends Component {
 }
 }
 
-export default Simple;
+export default Simple; 
 
 
 
