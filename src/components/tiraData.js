@@ -12,3 +12,11 @@ function TiraData(props) {
 }
 
 export default TiraData;
+
+
+
+
+
+
+
+

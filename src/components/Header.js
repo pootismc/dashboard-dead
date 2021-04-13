@@ -5,10 +5,10 @@ function Header() {
     return (
         <div className="navegacion">
             <div className="logo">
-                <a title="Dead Fellas" href=""><img className="avatar" width="30" src={avatar} alt="avatar"></img></a>
+                <a title="Dead Fellas" href="1"><img className="avatar" width="30" src={avatar} alt="avatar"></img></a>
             </div>
             <div>
-                <h2 class = "lidash">ADMINISTRADOR</h2>
+                <h2 className = "lidash">ADMINISTRADOR</h2>
             </div>
        </div>
     )

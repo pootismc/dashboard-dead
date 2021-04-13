@@ -3,7 +3,7 @@ import TiraData from './tiraData'
 
 function Data() {
     return (
-    <div class="categorias">
+    <div className="categorias">
         <TiraData titulo="holaa"/>
         <TiraData titulo="holaa"/>
         <TiraData titulo="holaa"/>
