@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import "../assets/css/simplePanels.css"
 
-
 class Simple extends Component {
     constructor(props) {
         super(props);   
@@ -19,7 +18,6 @@ class Simple extends Component {
     }
     
     componentDidMount() {
-        console.log( "3")
         this.apiCall("https://dead-fellas.herokuapp.com/api/user", this.totalUsuarios);
         this.apiCall("https://dead-fellas.herokuapp.com/api/product", this.totalProductos);
        this.apiCall("https://dead-fellas.herokuapp.com/api/collections", this.totalColecciones)
@@ -29,9 +27,7 @@ class Simple extends Component {
         this.setState({
             total: data.meta.total,
         })
-
     }
-
         totalProductos = (data) => {
         this.setState({
             productos: data.meta.total,
@@ -61,12 +57,14 @@ class Simple extends Component {
             <span>{this.state.colecciones}</span>
         </div>
     </div>
-
     );
 }
 }
 
 export default Simple; 
+
+
+
 
 
 
