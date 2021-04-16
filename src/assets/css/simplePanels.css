@@ -45,8 +45,48 @@
     justify-content: space-around;
     text-align: center;
     width: 100%;
+    margin-top:6px;
+    background-color: rgb(175, 171, 171);
 }
 
-.AllP{
-    width:400px
+.AllP1{
+    width:20%;
+}
+
+.AllP2{
+    width:40%
+}
+
+.AllP3{
+    width: 20%;
+}
+
+.AllP4{
+    width: 40%;
+}
+
+.AllP3 p{
+    font-size: 25px;
+}
+
+.AllP4 p{
+    font-size: 25px;
+}
+
+.classAll2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(145, 144, 144);
+}
+
+.container1{
+    margin-top: 100px;
+    height: 550px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
 }

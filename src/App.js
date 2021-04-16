@@ -14,7 +14,16 @@ function App() {
           <Data/>
           <Product/>
         </div>
+        <div className = "container1">
+        <tr className = "classAll2">
+                <td className="AllP3"><p>PRODUCTO</p></td>
+                <td className="AllP3"><p>PRECIO</p></td>
+                <td className="AllP4"><p>DESCRIPCIÓN</p></td>
+                <td className="AllP3"><p>STOCK</p></td>
+        </tr>
         <AllProduct/>
+        </div>
+
         
     </div>
 

@@ -12,12 +12,12 @@ class AllProduct2 extends Component{
 
     render() {
         return (
-        <div className = "classAll">
-            <p>{this.props.prod.name}</p>
-            <p>{this.props.prod.price}</p>
-            <p className="AllP">{this.props.prod.description}</p>
-            <p>{this.props.prod.quantity}</p>
-        </div>
+            <tr className = "classAll">
+                <td className="AllP1"><p>{this.props.prod.name}</p></td>
+                <td className="AllP1"><p>{this.props.prod.price}</p></td>
+                <td className="AllP2"><p>{this.props.prod.description}</p></td>
+                <td className="AllP1"><p>{this.props.prod.quantity}</p></td>
+            </tr>
         );
     }
 }
