@@ -24,3 +24,29 @@
 .miniDiv{
     margin-top:10px;
 }
+
+.divSimple2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 500px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    
+}
+
+.classAll{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.AllP{
+    width:400px
+}

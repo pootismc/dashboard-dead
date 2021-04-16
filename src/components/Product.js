@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import "../assets/css/dataPanels.css"
 
-class Data extends Component {
+class Product extends Component {
     constructor(props) {
         super(props);   
         this.state = {
-            arrayUsuarios: 0,
-            arrayUsuarios2: [],
+            arrayProductos: 0,
+            arrayProductos2: [],
             loading: true,
             }
         }
@@ -24,15 +24,14 @@ class Data extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("https://dead-fellas.herokuapp.com/api/user", this.totalUsuarios);
-    }
+        this.apiCall("https://dead-fellas.herokuapp.com/api/product", this.totalProductos);
+        }
         
-
-        totalUsuarios = (data) => {
+        totalProductos = (data) => {
             this.setState({
-                arrayUsuarios: data.data.length,
-                arrayUsuarios2: data.data
-            })}
+                arrayProductos: data.data.length,
+                arrayProductos2: data.data
+            })} 
 
     render() {
      if (this.state.loading) {
@@ -40,17 +39,16 @@ class Data extends Component {
      }
     return (
         <div className = "divSimple">
-            <h2 className = "miniDiv">Ultimo usuario creado</h2>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].name}</p>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].surname}</p>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].email}</p>
+            <h2 className = "miniDiv">Ultimo producto creado</h2>
+            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].name}</p>
+            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].price}</p>
+            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].quantity}</p>
         </div>
-
     );
 }
 }
 
-export default Data;
+export default Product;
 
 
 
