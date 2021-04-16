@@ -20,7 +20,7 @@ class Simple extends Component {
     componentDidMount() {
         this.apiCall("https://dead-fellas.herokuapp.com/api/user", this.totalUsuarios);
         this.apiCall("https://dead-fellas.herokuapp.com/api/product", this.totalProductos);
-       this.apiCall("https://dead-fellas.herokuapp.com/api/collections", this.totalColecciones)
+        this.apiCall("https://dead-fellas.herokuapp.com/api/collections", this.totalColecciones)
         }
     
         totalUsuarios = (data) => {

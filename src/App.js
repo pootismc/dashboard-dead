@@ -3,6 +3,7 @@ import Simple from "./components/Simple";
 import Product from "./components/Product";
 import Data from "./components/Data";
 import AllProduct from "./components/AllProduct";
+import Category from "./components/Categoria";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <div className = "categorias">
           <Data/>
           <Product/>
+          <Category/>
         </div>
         <div className = "container1">
         <tr className = "classAll2">
