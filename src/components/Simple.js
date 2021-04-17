@@ -46,15 +46,15 @@ class Simple extends Component {
     <div className="categorias">
         <div className = "divSimple">
             <h2 className = "miniDiv">Total de usuarios</h2>
-            <span>{this.state.total}</span>
+            <h1 className = "h1princ">{this.state.total}</h1>
         </div>
         <div className = "divSimple">
             <h2 className = "miniDiv">Total de productos</h2>
-            <span>{this.state.productos}</span>
+            <h1 className = "h1princ">{this.state.productos}</h1>
         </div>
         <div className = "divSimple">
             <h2 className = "miniDiv">Total de colecciones</h2>
-            <span>{this.state.colecciones}</span>
+            <h1 className = "h1princ">{this.state.colecciones}</h1>
         </div>
     </div>
     );

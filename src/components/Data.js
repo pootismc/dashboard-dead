@@ -41,9 +41,15 @@ class Data extends Component {
     return (
         <div className = "divSimple">
             <h2 className = "miniDiv">Ultimo usuario creado</h2>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].name}</p>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].surname}</p>
-            <p>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].email}</p>
+            <br></br>
+            <h4>Nombre:</h4>
+            <span>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].name}</span>
+            <br></br>
+            <h4>Apellido:</h4>
+            <span>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].surname}</span>
+            <br></br>
+            <h4>Email:</h4>
+            <span>{this.state.arrayUsuarios2[this.state.arrayUsuarios-1].email}</span>
         </div>
 
     );

@@ -40,9 +40,15 @@ class Product extends Component {
     return (
         <div className = "divSimple">
             <h2 className = "miniDiv">Ultimo producto creado</h2>
-            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].name}</p>
-            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].price}</p>
-            <p>{this.state.arrayProductos2[this.state.arrayProductos-1].quantity}</p>
+            <br></br>
+            <h4>Producto:</h4>
+            <span>{this.state.arrayProductos2[this.state.arrayProductos-1].name}</span>
+            <br></br>
+            <h4>Precio:</h4>
+            <span>{this.state.arrayProductos2[this.state.arrayProductos-1].price}</span>
+            <br></br>
+            <h4>Stock:</h4>
+            <span>{this.state.arrayProductos2[this.state.arrayProductos-1].quantity}</span>
         </div>
     );
 }

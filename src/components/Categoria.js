@@ -6,6 +6,7 @@ class Category extends Component {
         super(props);   
         this.state = {
             colecciones: 0,
+            colecciones1: 0,
         }
     }
     apiCall(url, c) {
@@ -22,6 +23,7 @@ class Category extends Component {
         totalColecciones = (data) => {
         this.setState({
             colecciones: data.data[0].products.length,
+            colecciones1: data.data[1].products.length,
         })
         }
    
@@ -29,8 +31,11 @@ class Category extends Component {
     render() {
     return (
         <div  className = "divSimple">
-            <h2 className = "miniDiv">Categorias productos</h2>
-            <span>{this.state.colecciones}</span>
+            <h2 className = "miniDiv">Cantidad de productos relacionados a una categoria</h2>
+            <br></br>
+            <h2>Temporada 2020:   {this.state.colecciones1}</h2>
+            <br></br>
+            <h2>Temporada 2021:{this.state.colecciones}</h2>
         </div>
     );
 }
